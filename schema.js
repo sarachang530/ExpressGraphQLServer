@@ -44,7 +44,9 @@ const RootQuery = new GraphQLObjectType({
           }
         }
         */
-       return axios.get('http//localhost:3000/customers/');
+        return axios
+          .get('http//localhost:3000/customers/' + args.id)
+          .then((res) => res.data);
       },
     },
     customers: {
