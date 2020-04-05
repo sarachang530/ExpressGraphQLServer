@@ -1,12 +1,12 @@
 const axios = require('axios');
 
 const {
-  GraphQLObjectType,
-  GraphQLString,
-  GraphQLInt,
-  GraphQLSchema,
-  GraphQLList,
-  GraphQLNonNull,
+  GraphQLObjectType, // <- Makes sure you are passing in an obj type
+  GraphQLString, // <- Makes sure you are passing in a String
+  GraphQLInt, // <- Makes sure you are passing in an Integer
+  GraphQLSchema, // <- creates a schema
+  GraphQLList, // <- creats a list for you to see
+  GraphQLNonNull, // <- Makes it so you are required to fill out an input
 } = require('graphql');
 
 // HardCoded Data
